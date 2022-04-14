@@ -7835,7 +7835,6 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 2aa67372883734d1abdccfe3939952a9, type: 2}
-  - {fileID: 2100000, guid: 2aa67372883734d1abdccfe3939952a9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -15719,6 +15718,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f83dda78df564f69878cfac9d5c1eb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moving: 0
   move: 5
   jumpHeight: 2
   moveSpeed: 2
@@ -16219,7 +16219,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1854355738}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.5, y: 0, z: 0}
+  m_LocalPosition: {x: -5.5, y: 0, z: -5.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

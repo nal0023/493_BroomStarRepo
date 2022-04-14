@@ -9,6 +9,7 @@ public class tacticsMove : MonoBehaviour
   Stack<Tile> path = new Stack<Tile>();
   Tile currentTile;
 
+  public bool moving = false;
   public int move = 5;
   public float jumpHeight =2;
   public float moveSpeed = 2;
@@ -17,10 +18,10 @@ public class tacticsMove : MonoBehaviour
   Vector3 heading = new Vector3();
 
   float halfHeight = 0;
-  
+
   protected void inIt() {
 
-    tiles = GameObject.FindGameObjectsWithTag("tile");
+    tiles = GameObject.FindGameObjectsWithTag("Tile");
 
     halfHeight = GetComponent<Collider>().bounds.extents.y;
 
@@ -64,7 +65,7 @@ public class tacticsMove : MonoBehaviour
 
     process.Enqueue(currentTile);
     currentTile.visited = true;
-    //currentTile.parent = ? leave as null
+    //currentTile.parent = ? leave as null?
 
     while(process.Count > 0) {
 
